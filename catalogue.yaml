@@ -1,5 +1,5 @@
 - name: installing catalogue
-  host: catalogue
+  hosts: catalogue
   become: yes
 
   tasks:
