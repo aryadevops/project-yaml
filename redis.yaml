@@ -3,7 +3,6 @@
   become: yes
 
   tasks:
-
   - name: install redis repo
     ansible.builtin.yum:
      name: yum install https://rpms.remirepo.net/enterprise/remi-release-8.rpm 
@@ -25,7 +24,7 @@
 
   - name: enable and start redis
     ansible.builtin.service:
-    name: redis
-    state: started
-    anabled: yes   
+     name: redis
+     state: started
+     anabled: yes   
        
