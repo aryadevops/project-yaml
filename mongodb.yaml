@@ -5,8 +5,8 @@
   tasks:
   - name: copying mondodb repo
     ansible.builtin.copy:
-    src: mongodb.repo
-    dest: /etc/yum.repos.d/mongo.repo
+     src: mongodb.repo
+     dest: /etc/yum.repos.d/mongo.repo  
 
   - name: installing mondodb-org
     ansible.builtin.yum:
